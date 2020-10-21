@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="javascripts/jquery-3.5.1.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    $(function() {
+      $('.f1 a').each(function() {
+    		$(this).on('click', function(e) {
+    			e.preventDefault();
+    			var scrollTo = $(this).attr('href');
+    			var whitespace = scrollTo == '#s1' ? 70 : -10;
+    			$('html,body').animate({
+    				scrollTop: $(scrollTo).offset().top - whitespace
+    			}, 1000);
+    		});
+    	});
+    });
+    </script>
+  </head>
+  <body>
+    <style media="screen">
+       @font-face {
+        font-family: 'Menoe';
+        src: url("fonts/Menoe-Grotesque-Pro.woff") format('woff');
+       }
+       body {
+         width: 1440px;
+         margin: 0 auto;
+         background: #F6F6F6;
+         height: 6983px;
+         display: block;
+         position: absolute;
+       }
+       body::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         top: 0;
+         right: 0;
+         /* background: url('images/maket2.jpg'); */
+         height: 100%;
+         display: block;
+         opacity: .5;
+       }
+       .f1 {
+         background: black;
+         width: 1440px;
+         height: 837px;
+         left: 0px;
+         top: 0px;
+       }
+       section div {
+         content: ""
+         position: absolute;
+         left: 0px;
+         top: 0px;
+         background: url ('images/1ekran.svg');
+         height: 100%;
+         display: block;
+       }
+       .p1 {
+         position: absolute;
+         width: 996px;
+         left: 63px;
+         top: 239px;
+         font-family: 'Menoe';
+         font-size: 250px;
+         color: #FFFFFF;
+         text-shadow: 0px 4px 70px #000000;
+         line-height: 47%;
+       }
+       .naz {
+         font-size: 120px;
+       }
+       .p2 {
+         position: absolute;
+         left: 63px;
+         top: 26px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         text-decoration-line: underline;
+         color: #FFFFFF;
+         text-shadow: 0px 4px 70px #000000;
+       }
+       .p3 {
+         position: absolute;
+         left: 255px;
+         top: 26px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         color: #FFFFFF;
+         text-shadow: 0px 4px 70px #000000;
+       }
+       .p4 {
+         position: absolute;
+         left: 469px;
+         top: 26px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         color: #FFFFFF;
+         text-shadow: 0px 4px 70px #000000;
+       }
+       .img2 {
+         position: absolute;
+         top: 657px;
+         left: 1286px;
+       }
+       .kupit {
+         position: absolute;
+         width: 202px;
+         height: 49.47px;
+         left: 1175px;
+         top: 36.05px;
+         border: 3px solid #FFFFFF;
+         box-sizing: border-box;
+         border-radius: 25.5px;
+       }
+       .p5 {
+         position: relative;
+         font-family: 'Menoe';
+         text-align: center;
+         font-size: 24px;
+         color: #FFFFFF;
+         top: -16px;
+       }
+       .f2 {
+         position: relative;
+         margin-top: 0px;
+         weight: 1440px;
+         height: 923px;
+       }
+
+     .d1 {
+       position: absolute;
+       height: 295px;
+       width: 1440px;
+     }
+     .b1 {
+       position: absolute;
+       top: 42px;
+       behavior: alternate;
+       direction: right;
+       height: 295px;
+       width: 1440px;0
+       loop: 100;
+     }
+
+     .k1 {
+       position: relative;
+       font-family: 'Menoe';
+       font-size: 250px;
+       margin-top: 0px;
+     }
+     .d2 {
+       position: absolute;
+       margin-top: 181px;
+       height: 295px;
+       width: 1440px;
+       background: #000000;
+     }
+     .b2 {
+       position: absolute;
+       behavior: alternate;
+       /* direction: right; */
+       height: 295px;
+       width: 1440px;
+       loop: 100;
+       top: 333px;
+       background: #000000
+     }
+     .k2 {
+       position: relative;
+       font-family: 'Menoe';
+       font-size: 250px;
+       margin-top: 0px;
+       color: #ffffff;
+     }
+     .d3 {
+       position: absolute;
+       margin-top: 362px;
+       height: 295px;
+       width: 1440px;
+     }
+     .b3 {
+       position: absolute;
+       behavior: alternate;
+       direction: left;
+       height: 295px;
+       width: 1440px;
+       loop: 100;
+       top: 626px;
+     }
+
+     .k3 {
+       position: relative;
+       font-family: 'Menoe';
+       font-size: 250px;
+       margin-top: 0px;
+     }
+       .f3 {
+         position: absolute;
+         top:1761px;
+         background: black;
+         width: 1440px;
+         height: 843px;
+         left: 0px;
+       }
+       .img3 {
+         position: absolute;
+         top: 0px;
+         left: 0px;
+       }
+       .img4 {
+         position: absolute;
+         top: 250px;
+         left: 773px;
+       }
+       .p6 {
+         position: absolute;
+         color: #ffffff;
+         font-family: 'Menoe';
+         font-size: 80px;
+         left: 777px;
+         top: 47px;
+       }
+       .p7 {
+         position: absolute;
+         width: 586px;
+         height: 142px;
+         left: 865px;
+         top: 290px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         line-height: 30px;
+         /* color: #000000; */
+         width: 380px;;
+       }
+       .p20 {
+         position: relative;
+         top: 700px;
+         margin-left: 777px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         text-decoration: none;
+         color: white;
+
+       }
+
+       .f4 {
+         position: relative;
+         top: 843px;
+         height: 2217px;
+         width: 1440px;
+         background: #F6F6F6;
+       }
+     .spisok {
+       position: absolute;
+       width: 1440px;
+       height: 1012px;
+       top: 1104px;
+       left: 0px;
+       background: #000000;
+     }
+       .p8 {
+         position: absolute;
+         margin-top: 373px;
+         margin-left: 67px;
+         width: 643px;
+         font-family: 'Menoe';
+         font-size: 64px;
+         line-height: 77px;
+         color: #ffffff;
+       }
+       .img5 {
+         position: absolute;
+         margin-top: 390px;
+         margin-left: 779px;
+       }
+       .spis {
+         position: absolute;
+         margin-top: 390px;
+         margin-left: 843px;
+         width: 528px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         line-height: 30px;
+         color: #ffffff;
+       }
+       .p9 {
+         position: relative;
+         margin-top: 98px;
+         text-align: center;
+         font-family: 'Menoe';
+         font-size: 144px;
+       }
+       .r1 {
+         position: relative;
+         width: 1092px;
+         height: 1121px;
+         align-items: center;
+         margin-left: 174px;
+         margin-top: -70px;
+         background: #FFFFFF;
+         border: 7px solid #000000;
+         box-sizing: border-box;
+       }
+       .p10 {
+         position: relative;
+         width: 870px;
+         height: 192px;
+         align-items: center;
+         margin-left: 110px;
+         top: 76px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         line-height: 30px;
+         color: #000000;
+       }
+       .img6 {
+         position: relative;
+         margin-top: 120px;
+         margin-left: 250px;
+       }
+       .p11 {
+         position: relative;
+         width: 870px;
+         height: 192px;
+         align-items: center;
+         margin-left: 110px;
+         margin-top: 61px;
+         font-family: 'Menoe';
+         font-size: 24px;
+         line-height: 30px;
+         color: #000000;
+       }
+       .f5 {
+         position: relative;
+         width: 1440px;
+         height: 819px;
+         margin-top: 719px;
+       }
+       .p12 {
+         position: relative;
+         width: 1314px;
+         height: 459px;
+         left: 63px;
+         padding-top: 85px;
+         font-family: 'Menoe';
+         font-size: 64px;
+         line-height: 81px;
+       }
+       .p13 {
+         position: relative;
+         padding-top: 101px;
+         padding-left: 916px;
+         font-family: 'Menoe';
+         font-size: 48px;
+       }
+       .f6 {
+         position: relative;
+         margin-top: 0px;
+         weight: 1440px;
+         height: 540px;
+         /* background: #000000; */
+       }
+       .d4 {
+         position: absolute;
+         height: 180px;
+         width: 1440px;
+         background: #000000;
+       }
+       .b4 {
+         position: absolute;
+         top: -149px;
+         behavior: alternate;
+         direction: right;
+         height: 180px;
+         width: 1440px;
+         loop: 100;
+       }
+
+       .k4 {
+         position: relative;
+         font-family: 'Menoe';
+         font-size: 130px;
+         margin-top: 0px;
+         color: #ffffff;
+       }
+       .d5 {
+         position: absolute;
+         margin-top: 181px;
+         height: 180px;
+         width: 1440px;
+       }
+       .b5 {
+         position: absolute;
+         behavior: alternate;
+         direction: right;
+         height: 180px;
+         width: 1440px;
+         loop: 100;
+       }
+       .k5 {
+         position: relative;
+         font-family: 'Menoe';
+         font-size: 130px;
+         margin-top: 0px;
+       }
+       .d6 {
+         position: absolute;
+         margin-top: 362px;
+         height: 180px;
+         width: 1440px;
+         background: #000000;;
+       }
+       .b6 {
+         position: absolute;
+         behavior: alternate;
+         direction: left;
+         height: 180px;
+         width: 1440px;
+         loop: 100;
+       }
+
+       .k6 {
+         position: relative;
+         font-family: 'Menoe';
+         font-size: 130px;
+         margin-top: 0px;
+         color: #ffffff;
+       }
+
+       .f7 {
+         position: relative;
+         top: -63px;
+         height: 706px;
+         width: 900px;
+       }
+       .p14 {
+         position: relative;
+         padding-top: 194px;
+         width: 1119px;
+         height: 317px;
+         left: 160px;
+         top: ;
+         font-family: 'Menoe';
+         font-size: 64px;
+         line-height: 77px;
+       }
+       .futer {
+         position: relative;
+         top: -106px;
+         height: 136px;
+         width: 1440px;
+         background: black;
+       }
+       .n1 {
+         position: relative;
+         font-family: 'Menoe';
+         font-size: 30px;
+         padding-left: 91px;
+         padding-top: 57px;
+         color: #ffffff;
+       }
+       .n2 {
+         position: absolute;
+         font-family: 'Menoe';
+         font-size: 30px;
+         top: 27px;
+         left: 740px;
+         color: #ffffff;
+       }
+       .n3 {
+         position: absolute;
+         font-family: 'Menoe';
+         font-size: 30px;
+         top: 27px;
+         left: 912px;
+         color: #ffffff;
+       }
+       .n4 {
+         position: absolute;
+         font-family: 'Menoe';
+         font-size: 30px;
+         top: 27px;
+         left: 1064px;
+         color: #ffffff;
+       }
+       .n5 {
+         position: absolute;
+         font-family: 'Menoe';
+         font-size: 30px;
+         top: 27px;
+         left: 1251px;
+         color: #ffffff;
+       }
+
+
+
+      </style>
+
+      <div class="f1">
+        <img src="images/1ekran.png" width="1440" height="900" margin-top: 0px alt="машинка">
+        <p class = "p1">Menoe  <span class ="naz">Grotesque Pro</span> </p>
+        <p class = "p2">ГЛАВНАЯ </p>
+        <a href="#s1"> <p class = "p3">ДИЗАЙНЕР</p></a>
+        <a href="#s2"><p class = "p4">СОЗДАНИЕ</p></a>
+        <a href="#s3"> <img class = "img2" src="images/strelka.png" alt="стрелка"></a>
+
+        </div>
+     <div class="f2">
+        <div class = "b1" id="s3">
+        <marquee scrolldelay="13" truespeed>
+            <p class = "k1">ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+          </marquee>
+        </div>
+
+        <div class = "b2" >
+          <marquee scrolldelay="13" truespeed direction="right">
+              <p class = "k2">JKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHI</p>
+            </marquee>
+        </div>
+
+        <div class = "b3">
+        <marquee scrolldelay="13" truespeed>
+            <p class = "k3">STUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQR</p>
+          </marquee>
+        </div>
+        </div>
+
+        <div class="f3">
+          <img class = "img3" src="images/adam.png" alt="дизайнер" id="s1">
+          <img class = "img4" src="images/kvadrat.png" alt="Прямоугольник">
+          <p class="p6">Адам Катый</p>
+          <p class="p7">Шрифтовой и графический дизайнер, преподаватель.<br>Прошёл обучение на курсе Type Media в Королевской академии искусств в Гааге. </p>
+          <a class="p20" href="https://type.today/ru/designer/Adam_Katyi">Узнать подробнее</a>
+
+
+        </div>
+
+        <div class="fon">
+
+        </div>
+
+        <div class="f4">
+          <div class="spisok">
+            <p class="p8">У Menoe Grotesque есть характерные черты шрифтов формата Open Type и три альтернативных набора символов</p>
+            <img class="img5" src="images/knopa.png" alt="">
+            <p class="spis">
+              Верхние индексы. <br> <br>
+              Гибридные цифры (промежуточный вариант между прописными и старостильными цифрами). <br> <br>
+              Лигатуры ll, ii, il, li и лигатуры для смайликов. <br> <br>
+              Лигатура ij и её вариант ij-acute для нидерландского языка. <br> <br>
+              Глифы румынского и турецкого языка. <br> <br>
+              Символы, чувствительные к регистру. <br> <br>
+              Порядковые числительные и капитель. <br> <br>
+            </p>
+
+          </div>
+
+          <p class = "p9" id="s2">Создание</p>
+          <div class="r1">
+            <p class="p10">На создание шрифта Menoe Grotesque Адама Катия вдохновила старая пишущая машинка «Континенталь». Он подробно изучил её шрифт с засечками и затем разработал свою версию — без засечек, в остальном ориентируясь на традицию шрифтов для пишущих машинок.</p>
+            <img class="img6" src="images/mashinka.png" alt="">
+            <p class="p11">Это шрифт с шагом 10: при наборе текста 12-м кеглем плотность набора составляет десять знаков на дюйм. <br> Кроме того, это моноширинный шрифт: любой символ шрифта Menoe Grotesque вписан в кегельную площадку стандартной ширины, что делает его идеально подходящим для вёрстки колонок или программирования.</p>
+          </div>
+        </div>
+
+        <div class="f5">
+          <p class="p12">«Плохо писать о том, что действительно с вами случилось. Губит наверняка. Чтобы вышло толково, надо писать о том, <br> чтобы сами придумали, сами создали. И получится правда»</p>
+          <p class="p13">Эрнест Хэмингуэй</p>
+        </div>
+
+
+        <div class="f6">
+           <div class="d4">
+           <marquee class "b4" scrolldelay="13" truespeed>
+               <p class = "k4">Съешь же ещё этих мягких французских булок, да выпей чаю Съешь же ещё этих мягких французских булок, да выпей чаю Съешь же ещё этих мягких французских булок, да выпей чаю </p>
+             </marquee>
+           </div>
+
+           <div class="d5">
+
+
+             <marquee class = "b5" scrolldelay="13" truespeed direction="right">
+                 <p class = "k5">мягких французских булок, да выпей чаю Съешь же ещё этих мягких французских булок, да выпей чаю Съешь же ещё этих мягких французских булок, да выпей чаю Съешь же ещё этих </p>
+               </marquee>
+           </div>
+
+           <div class="d6">
+           <marquee class = "b6" scrolldelay="13" truespeed>
+               <p class = "k6">да выпей чаю Съешь же ещё этих мягких французских булок, да выпей чаю Съешь же ещё этих мягких французских булок, да выпей чаю Съешь же ещё этих мягких французских булок, </p>
+             </marquee>
+           </div>
+           </div>
+
+
+        <div class="f7">
+          <p class="p14">Этот шрифт поможет вам стать современным писателем и&nbsp;дополнит ваш литературный стиль современным визуалом</p>
+        </div>
+
+        <div class="futer">
+          <p class="n1">работа Саминой Анны</p>
+          <a href="https://vk.com/konyaxa"> <p class="n2">vk</p> </a>
+          <a href="https://www.facebook.com/profile.php?id=100010074188818"> <p class="n3">fb</p> </a>
+          <a href="https://www.instagram.com/_ane4ka.s/"> <p class="n4">inst</p> </a>
+           <a href="https://www.behance.net/saminaanna3170"> <p class="n5">behance</p> </a>
+        </div>
+
+
+
+  </body>
+</html>
